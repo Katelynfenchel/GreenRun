@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var connectionString = process.env.DB_HOST
+var connectionString = process.env.DB_HOST || 'mongodb://localhost/greenrun'
 
 mongoose.connect(connectionString);
 
